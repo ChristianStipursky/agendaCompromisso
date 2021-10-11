@@ -1,0 +1,29 @@
+CREATE DATABASE IF NOT EXISTS agenda;
+
+CREATE TABLE compromissos (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  titulo varchar(150) NOT NULL,
+  horario datetime NOT NULL,
+  PRIMARY KEY (id),
+  KEY titulo (titulo)
+);	
+
+INSERT INTO compromissos VALUES
+(1,'Hora do trabalho','2021-10-10 08:00:00'),
+(2,'Reuniao Database','2021-10-11 10:00:00'),
+(3,'Almoço Niver','2021-10-12 12:00:00'),
+(4,'Hora do Evento','2021-11-25 08:00:00'),
+(5,'Reuniao Com Equipe','2021-10-11 10:00:00'),
+(6,'Cinema','2021-12-10 18:00:00'),
+(7,'Teste Novo','2021-09-11 10:00:00'),
+(8,'TM Torneio','2021-12-10 08:00:00'),
+(9,'Casa Nova','2022-01-01 10:00:00'),
+(10,'Aquele Livro TI','2021-10-10 08:00:00'),
+(11,'Jantar Novo','2022-06-11 21:00:00'),
+(12,'Trabalho Extra','2021-11-10 12:00:00'),
+(13,'Reuniao Cliente','2021-12- 01:10:00:00'),
+(14,'Almoço Niver Chefe Outro','2021-12-15 13:00:00'),
+(15,'Jantar Novo Antes daquele','2023-06-11 21:00:00'),
+(16,'Trabalho Extra Sempre Sábado','2021-05-10 12:00:00'),
+(17,'Reuniao Cliente Extra Trabalho','2021-12-01 10:00:00'),
+(18,'Niver Ana','2021-12-15 13:00:00');
